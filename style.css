@@ -170,3 +170,27 @@ footer {
     font-weight: bold;
     cursor: pointer;
 }
+
+/*formulário de contato*/
+#contato{
+    background-color: #f5f5f5;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+#contato.h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*area de mensagem*/
+#contato textarea {
+    resize:vertical
+}
+/*botão*/
+#contato button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+}

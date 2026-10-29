@@ -21,11 +21,25 @@
         <div class="menu">
         <a href="#inicio">Início</a>
         <a href="#produtos">Produtos</a>
+        <a href="#javascript">java</a>
+        <a href="produtos"> produtos</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
     </div>
-    </nav>
     <!--conteúdo principal do site-->
+    <div class="açoes">
+        <button id="botao-tema" class="botao-secundario"
+        type="button">modo escuro</button>
+
+        <p class="carrinho">
+            carrinho: <span id="contador-carrinho">0</span>
+            item(ns)
+            <span id="contador-carrinho">0</span> itens(ns)
+            <span id="total-carrinho">R$ 0,00</span> itens(ns)
+
+        </p>
+    </div>
+    </nav>
 
     <main>
     <!-- seção inicial-->
@@ -39,28 +53,50 @@
     </section>
     <!--seção de produtos-->
     <section id="produtos">
+
         <h2>Nossos Produtos</h2>
         <!--div com todos os produtos-->
-        <div class="produtos">
-            <!--Imagens do produto-->
+        <article class="produto" data-id="1">
             <img 
             src="https://i.pinimg.com/1200x/c5/a3/33/c5a3339bd205fc51e2888b490fa79643.jpg"
             alt="imagem do classico alemão">
             <h3>Clássico Alemão</h3>
             <p class="preço">
                 R$ 1414,00
+                <div class="botoes">
+                <button class="botao-comprar" type="button" data-id="1">Comprar</button>
+                <button class="botao-detalhes botao-secundario" type="button" 
+                data-id="1">Detalhes</button>
+            </p>
+        </article>
+
+        <article class="produto" data-id="2">
                 <img
                 src="https://i.pinimg.com/736x/ab/b2/bd/abb2bd9447551b82a317b01522124c01.jpg"
                 alt="martinelli spongebob">
                 <h4>Martinelli Spongebob</h4>
                 <p class="preço">
                     R$ 1999,00
+                    <div class="botoes">
+                <button class="botao-comprar" type="button" data-id="2">Comprar</button>
+                <button class="botao-detalhes botao-secundario" type="button" 
+                data-id="2">Detalhes</button>
+            </p>
+        </article>
+
+<article class="produto" data-id="3">
                     <img
                     src="https://i.pinimg.com/736x/9c/38/24/9c3824b75c3c600e9a249eeda3d0a285.jpg"
                     alt="evangelion love me?">
                     <h5>Evangelion Love Me?</h5>
                     <p class="preço">
                         R$ 1995,00
+                        <div class="botoes">
+                <button class="botao-comprar" type="button" data-id="3">Comprar</button>
+                <button class="botao-detalhes botao-secundario" type="button" 
+                data-id="3">Detalhes</button>
+            </p>
+        </article>
 
             </p>
             </div>
@@ -82,6 +118,34 @@
                     <p>
                         Entre em contato conosco pelo e-mail: martinellispongebob@hotmail.com
                     </p>
+                </div>
+            </section>
+            <!-- SEÇÃO DE CONTATO FORMULÁRIO -->
+            <section id="formulario">
+                <div class="formulario">
+                    <h2>Envie uma mensagem</h2>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+
+                        <label for="assunto">Assunto:</label>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select>
+
+                        <!-- campo de mensagem-->
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </form>
                 </div>
             </section>
             <!-- rodapé -->
